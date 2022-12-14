@@ -1,0 +1,8 @@
+wechaty:
+  acceptFriendship:
+    - ni
+    - hao
+  receptionFriendship: Hi
+openai:
+  apiKey: ''
+
