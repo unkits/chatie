@@ -1,8 +1,10 @@
 wechaty:
-  acceptFriendship:
-    - ni
-    - hao
-  receptionFriendship: Hi
-openai:
-  apiKey: ''
+  access_keys:
+    - hello
+    - chatie
+  greeting_text: Nice to meet you!
 
+openai:
+  api_key: ''
+  email: ''
+  password: ''

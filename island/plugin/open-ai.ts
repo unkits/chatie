@@ -4,7 +4,7 @@ import { useBotConfig } from "@/store";
 const [config] = useBotConfig();
 
 const configuration = new Configuration({
-  apiKey: config.openai.apiKey,
+  apiKey: config.openai.api_key,
 });
 const openai = new OpenAIApi(configuration);
 

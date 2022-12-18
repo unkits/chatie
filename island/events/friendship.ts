@@ -16,7 +16,7 @@ export const useFriendship = async (friendship: Friendship) => {
       {
         const hello = friendship.hello()
 
-        if (config.wechaty.acceptFriendship.includes(hello)) {
+        if (config.wechaty.access_keys.includes(hello)) {
           await friendship.accept()
         }
       }
@@ -28,7 +28,7 @@ export const useFriendship = async (friendship: Friendship) => {
         const contact = friendship.contact()
 
         await new Promise((r) => setTimeout(r, 1000))
-        await contact.say(config.wechaty.receptionFriendship)
+        await contact.say(config.wechaty.greeting_text)
       }
       break
 
