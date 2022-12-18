@@ -1,0 +1,9 @@
+node_modules
+.git*
+.editorconfig
+*.vscode
+*.DS_Store
+*.memory-card.json
+botconfig.yaml
+README.md
+Dockerfile*
