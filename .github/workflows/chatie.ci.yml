@@ -13,7 +13,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Push image to Docker Hub
+    name: Docker Buildx
 
     steps:
       - name: Checkout Repository
@@ -35,7 +35,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: xtoys/chatie
+          images: ${{ secrets.DOCKER_USERNAME }}/chatie
           tags: |
             type=semver,pattern={{version}}
 
@@ -46,3 +46,4 @@ jobs:
           platforms: linux/arm64,linux/amd64
           push: true
           tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}

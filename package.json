@@ -3,7 +3,7 @@
   "version": "edge",
   "description": "chat bot",
   "type": "module",
-  "author": "xtoys",
+  "author": "unkits",
   "license": "MIT",
   "scripts": {
     "dev": "tsx watch ./island/main.ts",

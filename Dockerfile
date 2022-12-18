@@ -1,6 +1,4 @@
 FROM alpine:latest
-LABEL container.maintainer="xtoys <echoless@yeah.net>"
-
 ENV PS1="@\u:\w \$ " \
     TZ="Asia/Shanghai" \
     PNPM_HOME="/root/.local/share/pnpm"
