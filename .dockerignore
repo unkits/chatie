@@ -1,9 +1,11 @@
 node_modules
 .git*
 .editorconfig
+.dockerignore
 *.vscode
 *.DS_Store
 *.memory-card.json
 botconfig.yaml
 README.md
+LICENSE
 Dockerfile*
